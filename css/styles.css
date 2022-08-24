@@ -1,0 +1,312 @@
+:root{
+	--headingFont: 'PT Sans', sans-serif;
+	--paragraphFont: 'Open Sans', sans-serif;
+	--primaryColor: #784d3c;
+	--white: #fff;
+	--gray: #e1e1e1;
+	--black: #000;
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;	/* 1rem = 10px */
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: var(--paragraphFont);
+	font-size: 1.6rem;
+	line-height: 1.8;
+}
+
+/** Globals **/
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1, h2, h3 ,h4{
+	font-family: var(--headingFont);
+	line-height: 1.2;
+}
+
+h1{
+	font-size: 4.8rem;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 3.2rem;
+}
+
+h4{
+	font-size: 2.8rem;
+}
+
+img{
+	max-width: 100%;
+}
+
+/** Utilidades **/
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/** Header and navigation **/
+.webp .header{
+	background-image: url(../assets/images/banner.webp);
+}
+
+.no-webp .header{
+	background-image: url(../assets/images/banner.jpg);
+}
+
+.header{
+	height: 50rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.header__text{
+	text-align: center;
+	color: var(--white);
+	margin-top: 5rem;
+}
+
+@media (min-width: 768px){
+	.header__text{
+		margin-top: 15rem;
+	}
+}
+
+.bar{
+	padding-top: 3rem;
+}
+
+@media (min-width: 768px){
+	.bar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.logo{
+	color: var(--white);
+	margin-bottom: 1rem;
+}
+
+.bar__logo{
+	font-weight: normal;
+}
+
+.bar__logo-bold{
+	font-weight: bold;
+}
+
+@media (min-width: 768px){
+	.navegation{
+		display: flex;
+		gap: 2rem;
+	}
+}
+
+.navegation__link{
+	margin: .5rem 0;
+	display: block;
+	text-align: center;
+	font-size: 1.8rem;
+	color: var(--white);
+}
+
+/** Blog ann sidebar **/
+@media (min-width: 768px){
+	.contenido-principal{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 3rem;
+	}
+
+
+}
+
+.input{
+	border-bottom: 3px solid var(--gray);
+	margin-bottom: 2rem;
+}
+
+.input:last-of-type{
+	border: none;
+	margin-bottom: 0;
+}
+
+.btn{
+	display: block;
+	font-family: var(--headingFont);
+	color: var(--white);
+	text-align: center;
+	padding: 1rem 3rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	border: none;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+@media (min-width: 768px){
+	.btn{
+		display: inline-block;
+	}
+}
+
+.btn--primary{
+	background-color: var(--black);
+}
+
+.btn--secundary{
+	background-color: var(--primaryColor);
+}
+
+.courses{
+	list-style: none;
+}
+
+.widget-course{
+	border-bottom: 3px solid var(--gray);
+	margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type{
+	border: none;
+	margin-bottom: 0;
+}
+
+.widget-course__label{
+	font-family: var(--headingFont);
+	font-weight: bold;
+}
+
+.widget-course__info{
+	font-weight: normal;
+}
+
+.widget-course__label,
+.widget-course__info{
+	font-size: 2rem;
+}
+
+/** Footer **/
+.footer{
+	background-color: var(--black);
+	padding-bottom: 3rem;
+	margin-top: 2rem;
+}
+
+/** About-us grid **/
+@media (min-width: 768px){
+	.about-us{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 3rem;
+	}
+}
+
+/** About-us flexbox **/
+/*
+@media (min-width: 768px){
+	.about-us{
+		display: flex;
+		gap: 3rem;
+	}
+
+	.about-us__image,
+	.about-us__text{
+		flex: 0 0 calc( 50% );
+	}
+}
+*/
+
+/** Course */
+.course{
+	padding: 3rem;
+	border-bottom: 3px solid var(--gray);
+}
+
+.course:last-of-type{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+@media (min-width: 768px){
+	.course{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 3rem;
+	}
+
+}
+
+/** Contact **/
+.webp .contact{
+	background-image: url(../assets/images/contacto.webp);
+}
+
+.no-webp .contact{
+	background-image: url(../assets/images/contacto.jpg);
+ }
+
+.contact__bg{
+	height: 40rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form{
+	background-color: var(--white);
+	margin: -8rem auto 0 auto;
+	width: 90%;
+	 padding: 5rem;
+}
+
+.field{
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.field__label{
+	flex: 0 0 9rem;
+}
+
+.field__input{
+	flex: 1;
+	border: 1px solid var(--black);
+}
+
+.field__input--textarea{
+	height: 20rem;
+	resize: none;
+}

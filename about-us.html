@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CoffeBlog</title>
+	<!-- Preload -->
+	<!-- Normalize.css -->
+	<link rel="preload" href="css/normalize.css" as="style">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Fonts -->
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Styles.css -->
+	<link rel="preload" href="css/styles.css" as="style">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="bar">
+				<a class="logo" href="index.html">
+					<h1 class="bar__logo no-margin text-center">Blog<span class="bar__logo-bold">DeCafé</span></h1>
+				</a>
+				<nav class="navegation">
+					<a class="navegation__link" href="about-us.html">Nosotros</a>
+					<a class="navegation__link" href="courses.html">Cursos</a>
+					<a class="navegation__link" href="contact.html">Contacto</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header__text">
+			<h2 class="no-margin">Blog de café con consejos y cursos</h2>
+			<p class="no-margin">Aprende de los espertos con las mejores recetas y consejos</p>
+		</div>
+	</header>
+	<main class="container">
+		<h3 class="text-center">Sobre nosotros</h3>
+		<div class="about-us">
+			<div class="about-us__image">
+				<picture>
+					<source loading="lazy" srcset="assets/images/nosotros.avif" type="image/avif">
+					<source loading="lazy" srcset="assets/images/nosotros.webp" type="image/webp">
+					<img loading="lazy" src="assets/images/nosotros.jpg" alt="About image">
+				</picture>
+			</div>
+			<div class="about-us__text">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolorem, eveniet, delectus laboriosam molestias soluta fuga qui explicabo necessitatibus inventore dolor illo vitae praesentium sapiente dolores, mollitia id? Sapiente cupiditate dignissimos necessitatibus, et! Dolorem impedit mollitia autem tempore quibusdam, quas explicabo.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolorem, eveniet, delectus laboriosam molestias soluta fuga qui explicabo necessitatibus inventore dolor illo vitae praesentium sapiente dolores, mollitia id? Sapiente cupiditate dignissimos necessitatibus, et! Dolorem impedit mollitia autem tempore quibusdam, quas explicabo.</p>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="bar">
+				<a class="logo" href="index.html">
+					<h1 class="bar__logo no-margin text-center">Blog<span class="bar__logo-bold">DeCafé</span></h1>
+				</a>
+				<nav class="navegation">
+					<a class="navegation__link" href="about-us.html">Nosotros</a>
+					<a class="navegation__link" href="courses.html">Cursos</a>
+					<a class="navegation__link" href="contact.html">Contacto</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<!-- Modernizer.js -->
+	<script src="js/modernizr.js"></script>
+</body>
+</html>
